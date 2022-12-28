@@ -20,5 +20,9 @@ enum class FONT_LIST
     MAIN_FONT,
     BUTTON_FONT
 };
-
+enum class OBJECT_TYPE
+{
+    CAT,
+    DOG
+};
 #endif /* SRC_FRAMEWORK_UTIL_IDENTIFIER */

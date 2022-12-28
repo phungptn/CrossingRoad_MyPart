@@ -23,8 +23,6 @@ FetchContent_MakeAvailable(sfml)
 
 project(cs202 LANGUAGES CXX)
 
-set(APP_NAME "crossy_road")
-
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
@@ -35,6 +33,5 @@ add_custom_target(assets ALL
     COMMAND 
     ${CMAKE_COMMAND} -E copy_directory
         ${CMAKE_CURRENT_SOURCE_DIR}/assets
-        $<TARGET_FILE_DIR:${APP_NAME}>/assets
-    DEPENDS ${APP_NAME}
+        $<TARGET_FILE_DIR:road>/assets
 )
